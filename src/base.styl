@@ -1,0 +1,21 @@
+*, *:before, *:after
+	margin 0
+	padding 0
+	box-sizing border-box
+
+:root
+	font-size $html-font-size
+	line-height $html-line-height
+
+body
+	background $body-background
+	color $color-text
+	font-family $base-font
+	font-size $font-size
+	text-rendering optimizeLegibility
+
+a
+	color $color-link
+	outline none
+	text-decoration none
+	mixin-hover-text-shadow($color-secondary)
