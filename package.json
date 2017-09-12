@@ -1,0 +1,13 @@
+{
+  "name": "afternoon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+	"watch": "stylus -w src/afternoon.styl -o build/afternoon.css --sourcemap-inline",
+	"build": "stylus src/afternoon.styl -o build/afternoon.css --sourcemap-inline"
+  }
+}
