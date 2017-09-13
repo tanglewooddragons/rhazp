@@ -3,8 +3,8 @@
 
 // Color definitions
 $color-primary = #445368
-$color-secondary = #0D1B2B
-$color-text = #9DA9AE
+$color-secondary = #030F1E
+$color-text = #C9DCF2
 
 $color-primary-light = lighten($color-primary, 3%)
 $color-primary-dark = darken($color-primary, 3%)
@@ -12,14 +12,14 @@ $color-primary-dark = darken($color-primary, 3%)
 $color-secondary-light = lighten($color-secondary, 3%)
 $color-secondary-dark = darken($color-secondary, 3%)
 
-$color-text-light = lighten($color-text, 30%)
-$color-text-dark = darken($color-text, 30%)
+$color-text-light = lighten($color-text, 20%)
+$color-text-dark = darken($color-text, 20%)
 
 $color-link = $color-text-dark
 
 // Main background
-$body-background = #eee
-$background = #ddd
+$body-background = url('https://i.imgur.com/xIywZzl.jpg') center center fixed
+$background =  $color-secondary-dark
 
 // Font stacks
 $fallback-font= 'Helvetica Neue', 'Helvetica', sans-serif
@@ -41,8 +41,16 @@ $spacing-lg = .8rem
 
 // Borders
 $border-radius = .1rem
+$border-width-sm = .05rem
+$border-width = .1rem
+$border-width-lg = 2rem
 
 // Typography
 $html-font-size = 20px
 $html-line-height = 1.428571429
 $font-size = .7rem
+$font-size-sm = .5rem
+
+// Layout
+$side-menu-flex = 1 //flex ratio
+$main-flex = 3

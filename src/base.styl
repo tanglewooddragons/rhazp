@@ -19,3 +19,11 @@ a
 	outline none
 	text-decoration none
 	mixin-hover-text-shadow($color-secondary)
+
+@media screen and (max-width $size-xs)
+	:root
+		font-size ($html-font-size - 4px)
+
+@media screen and (max-width $size-sm)
+	:root
+		font-size ($html-font-size - 2px)
