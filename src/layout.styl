@@ -6,16 +6,67 @@
 
 
 .side-menu
-	flex $side-menu-flex	
-	width 100%
-	height 100%
+	mixin-flex($side-menu-flex)
 
-	background $background
+	display flex
+	flex-direction column
+	align-items center
+	justify-content space-around
+
+	transition all $transition-time ease-in-out
+
+	background $background-semi-transparent
+	box-shadow 5px 0 5px $color-secondary-dark
+
+	&-element
+		mixin-flex(1)
+		display flex
+		align-items center
+		justify-content space-around
+
+		padding 0 30%
+		font-size $font-size-lg
+		font-family $header-font
+		color $color-text
+
+	&-logo
+		padding $spacing-lg
+		display block
+
+	&-logo-small
+		padding $spacing-sm
+		display none
+
+	&-icon
+		mixin-flex(1)
+		padding 0 $spacing
+
+	&-text
+		mixin-flex(3)
 
 	@media screen and (max-width $size-sm)
-		position absolute
 		z-index 100
-		max-width ($size-xs / 2)
+		max-width ($size-xs / 8)
+		height 100%
+
+		&-logo
+			display none
+		&-logo-small
+			display block
+
+		&-element
+			flex-direction column
+			justify-content initial
+			align-items center
+
+			padding $spacing
+			font-size $font-size-sm
+			font-family $base-font
+
+			text-align center
+
+		&-icon
+			font-size $font-size-lg !important
 
 .main
 	flex $main-flex
