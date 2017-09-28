@@ -1,3 +1,19 @@
 mixin-flex($flex)
 	width 100%
 	flex $flex
+
+mixin-standard-gradient($top, $bottom)
+	background linear-gradient(to bottom, $top, $bottom)
+
+mixin-hover-gradient-static($active, $inactive)
+	background linear-gradient(270deg, $inactive, $inactive 30%, $active 70%, $active)
+
+mixin-hover-gradient($active, $inactive)
+	mixin-hover-gradient-static($active, $inactive)	
+
+	background-size 400%, 400%
+	background-position 100%, 100%
+	transition background-position .7s ease-in-out
+
+	&:hover
+		background-position 0
