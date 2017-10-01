@@ -1,5 +1,5 @@
 {
-  "name": "afternoon",
+  "name": "rhazp",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,7 +7,7 @@
     "stylus": "^0.54.5"
   },
   "scripts": {
-	"watch": "stylus -w src/afternoon.styl -o build/afternoon.css --sourcemap-inline",
-	"build": "stylus src/afternoon.styl -o build/afternoon.css --sourcemap-inline"
+	"watch": "stylus -w src/rhazp.styl -o build/rhazp.css --sourcemap-inline",
+	"build": "stylus src/rhazp.styl -o build/rhazp.css --sourcemap-inline"
   }
 }
