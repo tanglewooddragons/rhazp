@@ -4,84 +4,17 @@
 	height 100vh
 	width 100vw
 
+.main
+	flex $main-flex
 
-.side-menu
-	mixin-flex($side-menu-flex)
+	width 85%
 
 	display flex
 	flex-direction column
-	align-items center
-	justify-content space-around
-
-	transition all $transition-time ease-in-out
-
-	background $background-semi-transparent
-	box-shadow 5px 0 5px $color-secondary-dark
-
-	&-element
-		mixin-flex(1)
-		display flex
-		align-items center
-		justify-content space-around
-
-		padding 0 30%
-		font-size $font-size-lg
-		font-family $header-font
-		color $color-text
-
-		mixin-hover-gradient(rgba($color-primary-dark, .3), transparent)
-
-	&-logo
-		padding $spacing-lg
-		display block
-
-	&-logo-small
-		padding $spacing-sm
-		display none
-
-	&-icon
-		mixin-flex(1)
-		padding 0 $spacing
-
-	&-text
-		mixin-flex(3)
-
-	@media screen and (max-width $size-sm)
-		z-index 100
-		max-width ($size-xs / 8)
-		height 100%
-
-		&-logo
-			display none
-		&-logo-small
-			display block
-
-		&-element
-			flex-direction column
-			justify-content initial
-			align-items center
-
-			padding $spacing
-			font-size $font-size-sm
-			font-family $base-font
-
-			text-align center
-
-
-		&-icon
-			font-size $font-size-lg !important
-
-.main
-	flex $main-flex
-	width 100%
-	position relative
-
-.navbar
-	padding $spacing
-	background $background
 
 .content
 	padding $spacing
+	overflow-x auto
 
 .container
 	margin 0 auto

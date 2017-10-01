@@ -1,0 +1,64 @@
+.side-menu
+	mixin-flex($side-menu-flex)
+
+	display flex
+	flex-direction column
+	align-items center
+	justify-content space-around
+
+	transition all $transition-time ease-in-out
+
+	background $background-semi-transparent
+	box-shadow 5px 0 5px $color-secondary-dark
+
+	&-element
+		mixin-flex(1)
+		display flex
+		align-items center
+		justify-content justify-content
+
+		padding 0 30%
+		font-size $font-size-lg
+		font-family $header-font
+		color $color-text
+
+		mixin-hover-gradient(rgba($color-primary-dark, .3), transparent)
+
+	&-logo
+		padding $spacing-lg
+		display block
+
+	&-logo-small
+		padding $spacing-sm
+		display none
+
+	@media screen and (min-width $size-sm)	
+		&-icon
+			mixin-flex(1)
+			padding 0 $spacing
+
+		&-text
+			mixin-flex(1)
+
+	@media screen and (max-width $size-sm)
+		width 15%
+
+		&-logo
+			display none
+		&-logo-small
+			display block
+
+		&-element
+			flex-direction column
+			justify-content center
+			align-items center
+
+			padding $spacing
+			font-size $font-size-sm
+			font-family $base-font
+
+			text-align center
+
+		&-icon
+			font-size $font-size-lg !important
+
