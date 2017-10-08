@@ -1,19 +1,26 @@
+// Layout components
+
 .wrapper
 	display flex
 
 	height 100vh
-	width 100vw
+	width 100%
 
 .main
-	flex $main-flex
-
-	width 85%
+	mixin-flex($main-flex)
 
 	display flex
 	flex-direction column
+	overflow-x hidden
+
+	animation fadein $fade-in-time ease-in-out
+	mixin-standard-gradient-percent($background, transparent, 50%)
+
+	@media screen and (max-width $size-sm)
+		mixin-flex($main-flex-shrink)
 
 .content
-	overflow-x auto
+	overflow-y auto
 
 .container
 	margin 0 auto
@@ -32,3 +39,11 @@
 		max-width $size-xl
 	&.xxl
 		max-width $size-2x
+
+@keyframes fadein
+	from
+		transform translateY($fade-in-start)
+		opacity 0
+	to
+		transform translateY(0)
+		opacity 1

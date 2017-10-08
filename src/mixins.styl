@@ -5,6 +5,9 @@ mixin-flex($flex)
 mixin-standard-gradient($top, $bottom)
 	background linear-gradient(to bottom, $top, $bottom)
 
+mixin-standard-gradient-percent($top, $bottom, $percent)
+	background linear-gradient(to bottom, $top, $bottom $percent, $bottom)
+
 mixin-hover-gradient-static($active, $inactive)
 	background linear-gradient(270deg, $inactive, $inactive 30%, $active 70%, $active)
 
