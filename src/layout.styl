@@ -13,13 +13,15 @@
 	flex-direction column
 	overflow-x hidden
 
-	animation fadein $fade-in-time ease-in-out
-	mixin-standard-gradient-percent($background, transparent, 50%)
+
+	mixin-standard-gradient($background, transparent)
 
 	@media screen and (max-width $size-sm)
 		mixin-flex($main-flex-shrink)
 
 .content
+	animation fadein $fade-in-time ease-in-out
+	height 100%
 	overflow-y auto
 
 .container
@@ -42,8 +44,6 @@
 
 @keyframes fadein
 	from
-		transform translateY($fade-in-start)
 		opacity 0
 	to
-		transform translateY(0)
 		opacity 1
