@@ -1,0 +1,34 @@
+.form-row
+	display flex
+	flex-direction row
+
+.form-control
+	mixin-flex(1)
+	padding $spacing
+
+	label
+		font-size $font-size-sm
+		font-family $base-font
+
+		user-select none
+
+	input[type='text']
+		appearance none
+		outline none
+		border none
+
+		width 100%
+
+		padding $spacing
+		color $color-text
+		font-family $base-font
+
+		mixin-focus-gradient($color-secondary, rgba($color-secondary, .7))
+
+	//textarea
+
+	//radio
+
+	//checkbox
+
+	//labels

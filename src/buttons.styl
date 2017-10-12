@@ -6,4 +6,18 @@
 	font-size $font-size
 	padding $spacing $spacing-lg
 
-	mixin-hover-gradient($color-secondary-negative, rgba($color-secondary-negative, .7))
+	mixin-hover-gradient($color-secondary, rgba($color-secondary, .7))
+
+	&.positive
+		mixin-hover-gradient($color-secondary-positive, rgba($color-secondary-positive, .7))
+
+	&.negative
+		mixin-hover-gradient($color-secondary-negative, rgba($color-secondary-negative, .7))
+
+	&.lg
+		font-size $font-size-lg
+	&.sm
+		font-size $font-size-sm
+	
+	&.primary
+		font-family $header-font
