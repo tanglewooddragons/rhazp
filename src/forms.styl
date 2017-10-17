@@ -35,8 +35,9 @@
 		background $color-secondary
 		margin $spacing-sm 0
 
-		input[type='radio']
+		input[type='radio'], input[type='checkbox']
 			margin $spacing
+			outline none
 
 			height 1em
 			width 1em
@@ -46,10 +47,23 @@
 
 			background transparent
 			border .15em $color-text solid
+
+			transition all $transition-time ease-in-out
+
+		input[type='radio']
 			border-radius 100%
-			
+
 			&:checked
 				background $color-text
+
+		input[type='checkbox']
+			&:checked:after
+				content '✓'
+				display block
+				font-weight 800
+				color $color-text
+				user-select none
+				line-height 0.9em
 
 		label
 			padding 0 $spacing
