@@ -12,7 +12,7 @@
 
 		user-select none
 
-	input[type='text']
+	input[type='text'], textarea
 		appearance none
 		outline none
 		border none
@@ -23,9 +23,37 @@
 		color $color-text
 		font-family $base-font
 
-		mixin-focus-gradient($color-secondary, rgba($color-secondary, .7))
+		mixin-focus-gradient($color-secondary-light, rgba($color-secondary, .7))
 
-	//textarea
+	textarea
+		height 10em
+
+	.form-control-binary
+		display flex
+		flex-direction row
+		align-items center
+		background $color-secondary
+		margin $spacing-sm 0
+
+		input[type='radio']
+			margin $spacing
+
+			height 1em
+			width 1em
+
+			appearance none
+			-webkit-appearance none
+
+			background transparent
+			border .15em $color-text solid
+			border-radius 100%
+			
+			&:checked
+				background $color-text
+
+		label
+			padding 0 $spacing
+			border-left 1px $color-primary solid
 
 	//radio
 
