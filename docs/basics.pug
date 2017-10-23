@@ -1,0 +1,20 @@
+extends layout
+block content
+	.container.lg
+		h1 Basics
+		h2 Basic concepts
+		p The most simple division of a Rhazp application viewport is into the side menu (that wide menu you see on the left) and the main (the section you see this text in). The side menu is designed to keep the entire navigation of your app within it and resizes nicely on mobile displays.
+
+		p The main is further divided into two sections: infobar (which is entirely optional, you can see it at the top of the screen) and content. Infobar is meant to display application-status-specific information, however you can repurpose it if necessary. The content is where the content of your page lives.
+
+		pre
+			code.html
+				| &lt;body>
+				|	&lt;div class="wrapper">
+				|		&lt;div class="side-menu">&lt;/div>
+				|		&lt;div class="main">
+				|			&lt;div class="infobar">&lt;/div>
+				|			&lt;div class="content">&lt;/div>
+				|		&lt;/div>
+				|	&lt;/div>
+				| &lt;/body>

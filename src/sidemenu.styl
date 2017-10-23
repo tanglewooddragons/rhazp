@@ -17,9 +17,8 @@
 		mixin-flex(1)
 		display flex
 		align-items center
-		justify-content justify-content
+		justify-content space-around
 
-		padding 0 30%
 		font-size $font-size-lg
 		font-family $header-font
 		color $color-text
@@ -34,16 +33,16 @@
 		padding $spacing-sm
 		display none
 
-	@media screen and (min-width $size-sm)	
+	@media screen and (min-width $size-sm + 1)	
 		&-icon
 			mixin-flex(1)
 			padding 0 $spacing
+			text-align center
 
 		&-text
-			mixin-flex(1)
+			mixin-flex(2)
 
 	@media screen and (max-width $size-sm)
-
 		&-logo
 			display none
 		&-logo-small

@@ -1,0 +1,51 @@
+html
+	head
+		title Rhazp Documentation
+
+		//highlight.js for docs
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js")
+		script
+			| hljs.initHighlightingOnLoad()
+
+		link(href='../build/rhazp.css', rel='stylesheet')
+		link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel='stylesheet')
+
+
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+
+	body
+		.wrapper
+			.side-menu
+				a(href="index.html").side-menu-logo
+					img(src="../assets/logo-midnight.png").responsive
+				a(href="index.html").side-menu-logo-small
+					img(src="../assets/logo-midnight-small.png").responsive
+				a(href="basics.html").side-menu-element
+					i.side-menu-icon.fa.fa-book
+					span.side-menu-text Basics
+				a(href="layout.html").side-menu-element
+					i.side-menu-icon.fa.fa-window-restore
+					span.side-menu-text Layout
+				a(href="components.html").side-menu-element
+					i.side-menu-icon.fa.fa-cogs
+					span.side-menu-text Components
+				a(href="credits.html").side-menu-element
+					i.side-menu-icon.fa.fa-users
+					span.side-menu-text Credits
+
+			.main
+				.infobar.noselect
+					.infobar-element
+						i.infobar-icon.fa.fa-rocket
+						span.infobar-text 50
+					.infobar-element
+						i.infobar-icon.fa.fa-superpowers
+						span.infobar-text 2.8 million
+					.infobar-element
+						i.infobar-icon.fa.fa-cogs
+						span.infobar-text 2
+
+				.content
+					block content
