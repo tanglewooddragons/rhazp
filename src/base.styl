@@ -32,27 +32,6 @@ hr
 	height 1px
 	background $color-text
 
-pre
-	position relative
-
-	&:before
-		content attr(data-lang)
-		display block
-		position absolute
-		background $background
-		color $color-primary
-		top $spacing
-		right $spacing
-
-code, .hljs
-	background $background-semi-transparent
-	padding $spacing
-	margin $spacing 0
-	position relative
-	color $text
-
-
-
 @media screen and (max-width $size-xs)
 	:root
 		font-size ($html-font-size - 4px)

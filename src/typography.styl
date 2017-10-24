@@ -25,6 +25,10 @@ a, ins, u
 p
 	padding $spacing 0
 
+ul, ol, dl
+	display block
+	padding-left 1.2em
+
 kbd
 	padding $spacing-sm
 	border .05rem $color-text solid
@@ -35,3 +39,24 @@ blockquote
 	padding $spacing-sm $spacing-lg
 	border-left $border-width solid $color-text
 	color $color-text-dark
+
+pre
+	position relative
+	tab-size 4
+
+	&:before
+		content attr(data-lang)
+		display block
+		position absolute
+		background $background
+		color $color-primary
+		top $spacing
+		right $spacing
+
+code, .hljs
+	background $background-semi-transparent
+	padding $spacing
+	margin $spacing 0
+	position relative
+	color $text
+

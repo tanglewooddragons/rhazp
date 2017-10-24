@@ -1,0 +1,145 @@
+extends theme
+block content
+	.container.lg
+		h1 Elements
+
+		h2 Headings
+
+		h1 Header 1
+		h2 Header 2
+		h3 Header 3
+		h4 Header 4
+		h5 Header 5
+		h6 Header 6
+
+		pre(data-lang="HTML")
+			code
+				| &lt;h1>Header 1&lt;/h1>
+
+		h2 Paragraphs
+
+		p Lorem ipsum dolor sit amet, #[a(href="#") consectetur adipiscing elit]. Cras in tincidunt neque, vel vulputate mauris. Donec sollicitudin metus sit amet risus rutrum dignissim. Nam non commodo dui. Curabitur sollicitudin purus a purus elementum posuere. Nullam vel mattis purus. Pellentesque eget tempus ipsum. In facilisis nibh vel consequat tristique. Etiam vitae varius lectus.
+
+		p Sed ut ipsum sed felis pulvinar imperdiet. Curabitur luctus tellus neque, a feugiat sapien fermentum in. Etiam ut turpis a eros aliquam accumsan sit amet a elit. Aliquam euismod erat eu leo mattis, at finibus ex suscipit. Donec sit amet gravida odio, a pretium orci. Mauris interdum imperdiet sem a aliquam. Nulla facilisi. Sed venenatis felis in vulputate venenatis.
+
+		pre(data-lang="HTML")
+			code
+				| &lt;p>...&lt;/p>
+
+		h2 Semantic text elements
+
+		p
+			abbr i18n
+			code &lt;abbr>
+		p
+			cite Citation
+			code &lt;cite>
+		p
+			del Deleted
+			code &lt;del>
+		p
+			i Italic
+			code &lt;i>
+		p
+			kbd Ctrl + S
+			code &lt;kbd>
+		p
+			samp Sample
+			code &lt;samp>
+		p
+			b Bold
+			code &lt;b>
+		p
+			code function()
+			code &lt;code>
+		p
+			em Emphasis
+			code &lt;em>
+		p
+			ins Inserted
+			code &lt;ins>
+		p
+			s Strikethrough
+			code &lt;s>
+		p
+			var 2 + 2
+			code &lt;var>
+
+		h2 Blockquote
+
+		blockquote
+			p "Fortune favours the prepared mind."
+			cite -- Louis Pasteur
+
+		pre(data-lang="HTML")
+			code
+				| &lt;blockquote>
+				|	&lt;p>...&lt;/p>
+				|	&lt;cite>-- Louis Pasteur&lt;/cite>
+				| &lt;/blockquote>
+	
+		h2 Lists
+
+		p
+			ul
+				li Alpha
+				li Beta
+					ul
+						li Bravo
+						li Bulldog
+				li Omega
+
+		p
+			ol
+				li Alpha
+				li Beta
+					ol(type='a')
+						li Bravo
+						li Bulldog
+				li Omega
+
+		pre(data-lang="HTML")
+			code
+				| &lt;ul>
+				|	&lt;li>Alpha&lt;/li>
+				|	&lt;li>Bravo&lt;/li>
+				|	&lt;li>
+				|		&lt;ul>
+				|			&lt;li>Bravo&lt;/li>
+				|			&lt;li>Bulldog&lt;/li>
+				|		&lt;/ul>
+				|	&lt;/li>
+				|	&lt;li>Omega&lt;/li>
+				| &lt;/ul>
+				|
+
+		h2 Buttons
+
+		p
+			button Default
+			button.positive Positive
+			button.negative Negative
+
+		p
+			a(href="#").button.primary Primary
+
+		p
+			button.lg Large
+			button.sm Small
+
+		p
+			button.lg.primary.disabled Large Primary Disabled
+
+		pre(data-lang="HTML")
+			code
+				| &lt;button>Default&lt;/button>
+				| &lt;button class="positive">Positive&lt;/button>
+				| &lt;button class="negative">Negative&lt;/button>
+				| 
+				| &lt;!-- Also with a link class .button -->
+				| &lt;a href="#" class="button primary">Primary&lt;/a>
+				| 
+				| &lt;button class="lg">Large&lt;/button>
+				| &lt;button class="sm">Small&lt;/button>
+				|
+				| &lt;button class="lg primary disabled">Large Primary Disabled&lt;/button>

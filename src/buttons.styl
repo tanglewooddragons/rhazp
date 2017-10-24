@@ -1,4 +1,9 @@
 .button, button, input[type='submit'], input[type='reset']
+	outline none
+	border none
+	appearance none
+
+	cursor pointer
 	display inline-block
 	border-radius $border-radius-lg
 
@@ -8,11 +13,23 @@
 
 	mixin-hover-gradient($color-secondary, rgba($color-secondary, .7))
 
+	&:active
+		color $color-text-dark
+
 	&.positive
 		mixin-hover-gradient($color-secondary-positive, rgba($color-secondary-positive, .7))
 
 	&.negative
 		mixin-hover-gradient($color-secondary-negative, rgba($color-secondary-negative, .7))
+
+	&.disabled
+		cursor default
+		opacity $disabled-button-opacity
+
+		&:hover
+			background rgba($color-secondary, .7) 
+		&:active
+			color $color-text 
 
 	&.lg
 		font-size $font-size-lg
