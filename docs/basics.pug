@@ -1,4 +1,4 @@
-extends layout
+extends theme
 block content
 	.container.lg
 		h1 Basics
@@ -7,8 +7,9 @@ block content
 
 		p The main is further divided into two sections: infobar (which is entirely optional, you can see it at the top of the screen) and content. Infobar is meant to display application-status-specific information, however you can repurpose it if necessary. The content is where the content of your page lives.
 
-		pre
+		pre(data-lang="HTML")
 			code.html
+				| &lt;!-- Basic Rhazp application layout -->
 				| &lt;body>
 				|	&lt;div class="wrapper">
 				|		&lt;div class="side-menu">&lt;/div>
@@ -18,3 +19,38 @@ block content
 				|		&lt;/div>
 				|	&lt;/div>
 				| &lt;/body>
+
+		h2 Configuring side menu
+
+		p Side menu is composed of an app logo as well as a certain number of elements.
+
+		p You can use two logos if you want them to display differently on large and small displays. If you want the same logo, just link it twice.
+
+		p You can also add icons from places such as fontawesome to side menu elements. They are entirely optional though.
+
+		pre(data-lang="HTML")
+			code.html
+				| &lt;div class="side-menu">
+				|	&lt;div class="side-menu-logo">
+				|		&lt;img class="responsive" src="../assets/logo-midnight.png" />
+				|	&lt;/div>
+				|	
+				|	&lt;div class="side-menu-logo-small">
+				|		&lt;img class="responsive" src="../assets/logo-midnight-small.png" />
+				|	&lt;/div>
+				|	
+				|	&lt;a href="#" class="side-menu-element">
+				|		&lt;i class="side-menu-icon fa fa-rocket">&lt;/i>
+				|		&lt;span class="side-menu-text">Rocket&lt;/span>
+				|	&lt;/a>
+				| &lt;/div>
+
+		h2 Creating your main
+
+		p The main should be a sibling of the side menu, and it should have one child with the class #[i content]. The rest is entirely up to you.
+
+		pre(data-lang="HTML")
+			code.html
+				| &lt;div class="main">
+				|	&lt;div class="content">&lt;/div>
+				| &lt;/div>
