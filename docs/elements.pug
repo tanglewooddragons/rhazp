@@ -143,3 +143,111 @@ block content
 				| &lt;button class="sm">Small&lt;/button>
 				|
 				| &lt;button class="lg primary disabled">Large Primary Disabled&lt;/button>
+
+		h2 Forms
+
+		.container.xs
+			form
+				.form-row
+					.form-control
+						label Name
+						input(type="text", placeholder="John")
+					.form-control
+						label Surname
+						input(type="text", placeholder="Doe")
+
+				.form-row
+					.form-control
+						label E-mail
+						input(type="email", placeholder="email@example.com")
+				
+				.form-row
+					.form-control
+						label Web Browser
+						.form-control-binary
+							input(type="radio", name="browser", id="radio-firefox")
+							label(for="radio-firefox") Firefox
+
+						.form-control-binary
+							input(type="radio", name="browser", id="radio-chrome")
+							label(for="radio-chrome") Chrome
+
+						.form-control-binary
+							input(type="radio", name="browser", id="radio-safari")
+							label(for="radio-safari") Safari
+
+				.form-row
+					.form-control
+						label Operating System
+						.form-control-binary
+							input(type="checkbox", name="os", id="os-linux")
+							label(for="os-linux") Linux
+
+						.form-control-binary
+							input(type="checkbox", name="os", id="os-mac")
+							label(for="os-mac") Mac
+
+						.form-control-binary
+							input(type="checkbox", name="os", id="os-windows")
+							label(for="os-windows") Windows
+
+				.form-row
+					input(type="submit").primary
+
+		pre(data-lang="HTML")
+			code
+				|	&lt;form>
+				|		&lt;div class="form-row">
+				|			&lt;div class="form-control">
+				|				&lt;label>Name&lt;/label>
+				|				&lt;input type="text" placeholder="John"/>
+				|			&lt;/div>
+				|			&lt;div class="form-control">
+				|				&lt;label>Surname&lt;/label>
+				|				&lt;input type="text" placeholder="Doe"/>
+				|			&lt;/div>
+				|		&lt;/div>
+				|		&lt;div class="form-row">
+				|			&lt;div class="form-control">
+				|				&lt;label>E-mail&lt;/label>
+				|				&lt;input type="email" placeholder="email@example.com"/>
+				|			&lt;/div>
+				|		&lt;/div>
+				|		&lt;div class="form-row">
+				|			&lt;div class="form-control">
+				|				&lt;label>Web Browser&lt;/label>
+				|				&lt;div class="form-control-binary">
+				|					&lt;input id="radio-firefox" type="radio" name="browser"/>
+				|					&lt;label for="radio-firefox">Firefox&lt;/label>
+				|				&lt;/div>
+				|				&lt;div class="form-control-binary">
+				|					&lt;input id="radio-chrome" type="radio" name="browser"/>
+				|					&lt;label for="radio-chrome">Chrome&lt;/label>
+				|				&lt;/div>
+				|				&lt;div class="form-control-binary">
+				|					&lt;input id="radio-safari" type="radio" name="browser"/>
+				|					&lt;label for="radio-safari">Safari&lt;/label>
+				|				&lt;/div>
+				|			&lt;/div>
+				|		&lt;/div>
+				|		&lt;div class="form-row">
+				|			&lt;div class="form-control">
+				|				&lt;label>Operating System&lt;/label>
+				|				&lt;div class="form-control-binary">
+				|					&lt;input id="os-linux" type="checkbox" name="os"/>
+				|					&lt;label for="os-linux">Linux&lt;/label>
+				|				&lt;/div>
+				|				&lt;div class="form-control-binary">
+				|					&lt;input id="os-mac" type="checkbox" name="os"/>
+				|					&lt;label for="os-mac">Mac&lt;/label>
+				|				&lt;/div>
+				|				&lt;div class="form-control-binary">
+				|					&lt;input id="os-windows" type="checkbox" name="os"/>
+				|					&lt;label for="os-windows">Windows&lt;/label>
+				|				&lt;/div>
+				|			&lt;/div>
+				|		&lt;/div>
+				|		&lt;div class="form-row">
+				|			&lt;input class="primary" type="submit"/>
+				|		&lt;/div>
+				|	&lt;/form>
