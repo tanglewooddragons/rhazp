@@ -1,5 +1,6 @@
 .jumbotron
-	background-image attr(data-bg)
+	background-position center
+	background-repeat no-repeat
 	background-size cover
 	height $jumbotron-height
 	border-radius $jumbotron-border-radius
@@ -11,4 +12,7 @@
 
 	position relative
 
-	text-shadow 0 0 10px black
+	text-shadow 0 0 5px black
+
+	&.alt
+		color $color-secondary 

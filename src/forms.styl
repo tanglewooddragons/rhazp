@@ -25,8 +25,29 @@
 
 		mixin-focus-gradient($color-secondary-light, rgba($color-secondary, .7))
 
+		&::placeholder
+			opacity $placeholder-opacity
+			color $color-text-light
+
 	textarea
-		height 10em
+		height $textarea-height
+
+	.input-group
+		display flex
+		align-items center
+		justify-content flex-start
+
+		height $input-group-height
+
+		*
+			height 100%
+		*:first-child 
+			border-radius $input-group-radius 0 0 $input-group-radius 
+		*:last-child
+			border-radius 0 $input-group-radius $input-group-radius 0 
+		*:not(:first-child):not(:last-child)
+			border-radius 0
+		
 
 	.form-control-binary
 		display flex
