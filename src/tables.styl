@@ -1,0 +1,24 @@
+table
+	width 100%
+	border-collapse collapse
+
+	thead
+		background $color-secondary-dark
+		font-weight bold
+		text-align center
+
+	tbody
+		tr:nth-child(odd)
+			background $color-secondary
+		tr:nth-child(even)
+			background $color-secondary-dark
+
+	td
+		padding $spacing
+		border 1px $color-primary-dark solid
+
+.table-container
+	width 100%
+	overflow-x scroll
+			
+	mixin-scrollbar-default()

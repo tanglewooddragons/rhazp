@@ -30,3 +30,17 @@ mixin-focus-gradient($active, $inactive)
 
 	&:focus
 		background-position 0
+
+mixin-scrollbar-default()
+	position relative
+
+	&::-webkit-scrollbar
+		width $scrollbar-height
+		height $scrollbar-height
+		position absolute
+		bottom 0
+
+	&::-webkit-scrollbar-thumb
+		background $scrollbar-thumb
+	&::webkit-scrollbar-track
+		background $scrollbar-background
