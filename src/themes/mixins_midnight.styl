@@ -12,10 +12,14 @@ mixin-hover-gradient-static($active, $inactive)
 	background linear-gradient(270deg, $inactive, $inactive 30%, $active 70%, $active)
 
 mixin-hover-gradient($active, $inactive)
-	filter contrast(100%)
+	mixin-hover-gradient-static($active, $inactive)	
+
+	background-size 400%, 400%
+	background-position 99%, 99%
+	transition background-position .7s ease-in-out
 
 	&:hover
-		filter contrast(200%)
+		background-position 0
 
 mixin-focus-gradient($active, $inactive)
 	mixin-hover-gradient-static($active, $inactive)
