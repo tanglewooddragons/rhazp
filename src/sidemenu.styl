@@ -1,8 +1,9 @@
 .side-menu
 	mixin-flex($side-menu-flex)
+	height 100%
 
 	display flex
-	flex-direction column
+	flex-direction $side-menu-direction
 	align-items center
 	justify-content space-around
 
@@ -15,6 +16,7 @@
 
 	&-element
 		mixin-flex(1)
+		height 100%
 		display flex
 		align-items center
 		justify-content space-around
@@ -26,8 +28,16 @@
 		mixin-hover-gradient(rgba($color-secondary-light, .7), transparent)
 
 	&-logo
+		mixin-flex(1)
+		height 100%
 		padding $spacing-lg
-		display block
+		display flex
+		align-items center
+		justify-content center
+
+		img
+			max-width 100%
+			max-height 100%
 
 	&-logo-small
 		padding $spacing-sm
