@@ -16,10 +16,12 @@ mixin-hover-gradient($active, $inactive)
 
 	background-size 400%, 400%
 	background-position 99%, 99%
-	transition background-position .7s ease-in-out
+	transition background-position .7s ease-in-out,
+				color .7s ease-in-out
 
 	&:hover
 		background-position 0
+		color $color-primary
 
 mixin-focus-gradient($active, $inactive)
 	mixin-hover-gradient-static($active, $inactive)
