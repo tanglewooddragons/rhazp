@@ -9,7 +9,7 @@
     "stylus": "^0.54.5"
   },
   "scripts": {
-    "watch": "stylus -w src/rhazp.styl -o build/rhazp.css --sourcemap-inline",
+    "watch": "stylus -w src/rhazp.styl -o build/rhazp.css --sourcemap-inline & pug -w docs",
     "build": "stylus src/rhazp.styl -o build/rhazp.css --sourcemap-inline",
 	"start": "serve ."
   }

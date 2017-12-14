@@ -1,5 +1,5 @@
 # TODO
 
-- ~Card container and cards~
-- Tables
-- Input groups
+- Card container and cards
+- ~Tables~
+- ~Input groups~
