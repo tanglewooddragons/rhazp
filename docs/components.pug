@@ -14,7 +14,6 @@ block content
 				|&lt;div class="jumbotron alt" style="background-image: url('...')">
 				|	&lt;h1>Jumbotron&lt;/h1>
 				|&lt;/div>
-		
 
 		h2 Input groups
 		form
@@ -49,3 +48,52 @@ block content
 				| 		&lt;/div>
 				| 	&lt;/div>
 				|&lt;/form>
+
+		h2 Card grids
+
+		p Card grids spread a variety of rich elements in an organised grid.
+
+		p Card containers have three preset sizes: #[code lg] will not collapse, #[code md] will collapse once (to 50% width) and #[code sm] will collapse twice (to 33% and 50% width).
+
+		p Within cards, #[code p] elements fill the entire empty space. Apart from that, there is no predefined behaviour and you can do with them whatever you like.
+
+		p You can add the #[code small] class to individual cards to give them small text size.
+
+		p Any remaining cards in the last row are automatically stretched to fill the screen.
+
+		.cards.sm
+			.card
+				h5 Alpha
+				p This is a regular card with just text.
+			.card
+				h5 Beta
+				p This card also has a button.
+				button.primary.fill Nice button!
+			.card.small
+				h5 Gamma
+				p This card features small text.
+			.card
+				h5 Delta
+				p This card will fill the bottom of the screen if your viewport is large enough.
+
+		pre(data-lang="HTML")
+			code
+				| &lt;div class="cards sm">
+				|	&lt;div class="card">
+				|		&lt;h5>Alpha&lt;/h5>
+				|		&lt;p>...&lt;/p>
+				|	&lt;/div>
+				|	&lt;div class="card">
+				|		&lt;h5>Beta&lt;/h5>
+				|		&lt;p>...&lt;/p>
+				|		&lt;button class="primary fill">Nice button!&lt;/button>
+				|	&lt;/div>
+				|	&lt;div class="card small">
+				|		&lt;h5>Gamma&lt;/h5>
+				|		&lt;p>...&lt;/p>
+				|	&lt;/div>
+				|	&lt;div class="card">
+				|		&lt;h5>Delta&lt;/h5>
+				|		&lt;p>...&lt;/p>
+				|	&lt;/div>
+				| &lt;/div>
