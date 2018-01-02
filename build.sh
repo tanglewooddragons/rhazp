@@ -20,7 +20,7 @@ else
 	exit 1
 fi
 
-if stylus src_compile/rhazp.styl -o rhazp.css
+if stylus src_compile/rhazp.styl -c -o rhazp.css
 then
 	echo "Theme compiled"
 else
