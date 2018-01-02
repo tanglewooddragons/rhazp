@@ -8,3 +8,13 @@
 - **Conservative**, leave Material design behind and embrace depth.
 - **Sensible defaults**, easy to use and featureful out of the box.
 - **Customiseable**, just change a few variables and get an entirely new theme.
+
+# Installation
+
+```
+git pull https://github.com/tanglewooddragons/rhazp.git
+cd rhazp
+npm install
+```
+
+There is a simple build script provided which you can use to quickly compile a new theme. To use it, run `./build.sh path/to/theme`.
