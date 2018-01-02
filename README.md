@@ -1,5 +1,5 @@
 
-![logo](https://github.com/MrHuds0n/rhazp/blob/master/assets/banner_color_vertical.png?raw=true)
+![logo](https://github.com/MrHuds0n/rhazp/blob/master/assets/banner_color_horizontal.png?raw=true)
 
 **Rhazp** (**R**hazp **ha**s **z**ero **p**unctuation) is a modern, innovative CSS framework written in Stylus.
 
