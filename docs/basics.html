@@ -1,0 +1,25 @@
+<html><head><title>Rhazp Documentation</title><!--highlight.js for docs--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad()</script><link href="../rhazp.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/></head><body><div class="wrapper"><div class="side-menu"><a class="side-menu-logo" href="index.html"><img class="responsive" src="../assets/logo-midnight.png"/></a><a class="side-menu-logo-small" href="index.html"><img class="responsive" src="../assets/logo-midnight-small.png"/></a><a class="side-menu-element" href="basics.html"><i class="side-menu-icon fa fa-book"></i><span class="side-menu-text">Basics</span></a><a class="side-menu-element" href="elements.html"><i class="side-menu-icon fa fa-flask"></i><span class="side-menu-text">Elements</span></a><a class="side-menu-element" href="components.html"><i class="side-menu-icon fa fa-cogs"></i><span class="side-menu-text">Components</span></a><a class="side-menu-element" href="credits.html"><i class="side-menu-icon fa fa-users"></i><span class="side-menu-text">Credits</span></a></div><div class="main"><div class="content"><div class="container lg"><h1>Basics</h1><h2>Basic concepts</h2><p>The most simple division of a Rhazp application viewport is into the side menu (that wide menu you see on the left) and the main (the section you see this text in). The side menu is designed to keep the entire navigation of your app within it and resizes nicely on mobile displays.</p><p>The main is further divided into two sections: infobar (which is entirely optional) and content. Infobar is meant to display application-status-specific information, however you can repurpose it if necessary. The content is where the content of your page lives.</p><pre data-lang="HTML"><code class="html">&lt;!-- Basic Rhazp application layout -->
+&lt;body>
+	&lt;div class="wrapper">
+		&lt;div class="side-menu">&lt;/div>
+		&lt;div class="main">
+			&lt;div class="infobar">&lt;/div>
+			&lt;div class="content">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/body></code></pre><h2>Configuring side menu</h2><p>Side menu is composed of an app logo as well as a certain number of elements.</p><p>You can use two logos if you want them to display differently on large and small displays. If you want the same logo, just link it twice.</p><p>You can also add icons from places such as fontawesome to side menu elements. They are entirely optional though.</p><pre data-lang="HTML"><code class="html">&lt;div class="side-menu">
+	&lt;div class="side-menu-logo">
+		&lt;img class="responsive" src="../assets/logo-midnight.png" />
+	&lt;/div>
+	
+	&lt;div class="side-menu-logo-small">
+		&lt;img class="responsive" src="../assets/logo-midnight-small.png" />
+	&lt;/div>
+	
+	&lt;a href="#" class="side-menu-element">
+		&lt;i class="side-menu-icon fa fa-rocket">&lt;/i>
+		&lt;span class="side-menu-text">Rocket&lt;/span>
+	&lt;/a>
+&lt;/div></code></pre><h2>Creating your main</h2><p>The main should be a sibling of the side menu, and it should have one child with the class <i>content</i>. The rest is entirely up to you.</p><pre data-lang="HTML"><code class="html">&lt;div class="main">
+	&lt;div class="content">&lt;/div>
+&lt;/div></code></pre></div></div></div></div></body></html>
