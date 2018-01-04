@@ -1,0 +1,98 @@
+<html><head><title>Rhazp Documentation</title><!--highlight.js for docs--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad()</script><link href="../rhazp.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/></head><body><div class="wrapper"><div class="side-menu"><a class="side-menu-logo" href="index.html"><img class="responsive" src="../assets/logo-midnight.png"/></a><a class="side-menu-logo-small" href="index.html"><img class="responsive" src="../assets/logo-midnight-small.png"/></a><a class="side-menu-element" href="basics.html"><i class="side-menu-icon fa fa-book"></i><span class="side-menu-text">Basics</span></a><a class="side-menu-element" href="elements.html"><i class="side-menu-icon fa fa-flask"></i><span class="side-menu-text">Elements</span></a><a class="side-menu-element" href="components.html"><i class="side-menu-icon fa fa-cogs"></i><span class="side-menu-text">Components</span></a><a class="side-menu-element" href="credits.html"><i class="side-menu-icon fa fa-users"></i><span class="side-menu-text">Credits</span></a></div><div class="main"><div class="content"><div class="container lg"><h1>Elements</h1><h2>Headings</h2><h1>Header 1</h1><h2>Header 2</h2><h3>Header 3</h3><h4>Header 4</h4><h5>Header 5</h5><h6>Header 6</h6><pre data-lang="HTML"><code>&lt;h1>Header 1&lt;/h1></code></pre><h2>Paragraphs</h2><p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Cras in tincidunt neque, vel vulputate mauris. Donec sollicitudin metus sit amet risus rutrum dignissim. Nam non commodo dui. Curabitur sollicitudin purus a purus elementum posuere. Nullam vel mattis purus. Pellentesque eget tempus ipsum. In facilisis nibh vel consequat tristique. Etiam vitae varius lectus.</p><p>Sed ut ipsum sed felis pulvinar imperdiet. Curabitur luctus tellus neque, a feugiat sapien fermentum in. Etiam ut turpis a eros aliquam accumsan sit amet a elit. Aliquam euismod erat eu leo mattis, at finibus ex suscipit. Donec sit amet gravida odio, a pretium orci. Mauris interdum imperdiet sem a aliquam. Nulla facilisi. Sed venenatis felis in vulputate venenatis.</p><pre data-lang="HTML"><code>&lt;p>...&lt;/p></code></pre><h2>Semantic text elements</h2><p><abbr title="internationalisation">i18n</abbr><code>&lt;abbr></code></p><p><cite>Citation</cite><code>&lt;cite></code></p><p><del>Deleted</del><code>&lt;del></code></p><p><i>Italic</i><code>&lt;i></code></p><p><kbd>Ctrl + S</kbd><code>&lt;kbd></code></p><p><samp>Sample</samp><code>&lt;samp></code></p><p><strong>Strong</strong><code>&lt;strong></code></p><p><code>function()</code><code>&lt;code></code></p><p><em>Emphasis</em><code>&lt;em></code></p><p><ins>Inserted</ins><code>&lt;ins></code></p><p><s>Strikethrough</s><code>&lt;s></code></p><p><var>2 + 2</var><code>&lt;var></code></p><h2>Blockquote</h2><blockquote><p>"Fortune favours the prepared mind."</p><cite>-- Louis Pasteur</cite></blockquote><pre data-lang="HTML"><code>&lt;blockquote>
+	&lt;p>...&lt;/p>
+	&lt;cite>-- Louis Pasteur&lt;/cite>
+&lt;/blockquote></code></pre><h2>Lists</h2><p><ul><li>Alpha</li><li>Beta<ul><li>Bravo</li><li>Bulldog</li></ul></li><li>Omega</li></ul></p><p><ol><li>Alpha</li><li>Beta<ol type="a"><li>Bravo</li><li>Bulldog</li></ol></li><li>Omega</li></ol></p><pre data-lang="HTML"><code>&lt;ul>
+	&lt;li>Alpha&lt;/li>
+	&lt;li>Bravo&lt;/li>
+	&lt;li>
+		&lt;ul>
+			&lt;li>Bravo&lt;/li>
+			&lt;li>Bulldog&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+	&lt;li>Omega&lt;/li>
+&lt;/ul>
+</code></pre><h2>Buttons</h2><p><button>Default</button><button class="positive">Positive</button><button class="negative">Negative</button></p><p><a class="button primary" href="#">Primary</a></p><p><button class="lg">Large</button><button class="sm">Small</button></p><p><button class="lg primary disabled">Large Primary Disabled</button></p><pre data-lang="HTML"><code>&lt;button>Default&lt;/button>
+&lt;button class="positive">Positive&lt;/button>
+&lt;button class="negative">Negative&lt;/button>
+ 
+&lt;!-- Also with a link class .button -->
+&lt;a href="#" class="button primary">Primary&lt;/a>
+ 
+&lt;button class="lg">Large&lt;/button>
+&lt;button class="sm">Small&lt;/button>
+
+&lt;button class="lg primary disabled">Large Primary Disabled&lt;/button></code></pre><h2>Forms</h2><div class="container xs"><form><div class="form-row"><div class="form-control"><label>Name</label><input type="text" placeholder="John"/></div><div class="form-control"><label>Surname</label><input type="text" placeholder="Doe"/></div></div><div class="form-row"><div class="form-control"><label>E-mail</label><input type="email" placeholder="email@example.com"/></div></div><div class="form-row"><div class="form-control"><label>Web Browser</label><div class="form-control-binary"><input type="radio" name="browser" id="radio-firefox"/><label for="radio-firefox">Firefox</label></div><div class="form-control-binary"><input type="radio" name="browser" id="radio-chrome"/><label for="radio-chrome">Chrome</label></div><div class="form-control-binary"><input type="radio" name="browser" id="radio-safari"/><label for="radio-safari">Safari</label></div></div></div><div class="form-row"><div class="form-control"><label>Operating System</label><div class="form-control-binary"><input type="checkbox" name="os" id="os-linux"/><label for="os-linux">Linux</label></div><div class="form-control-binary"><input type="checkbox" name="os" id="os-mac"/><label for="os-mac">Mac</label></div><div class="form-control-binary"><input type="checkbox" name="os" id="os-windows"/><label for="os-windows">Windows</label></div></div></div><div class="form-row"><input class="primary" type="submit"/></div></form></div><pre data-lang="HTML"><code>	&lt;form>
+		&lt;div class="form-row">
+			&lt;div class="form-control">
+				&lt;label>Name&lt;/label>
+				&lt;input type="text" placeholder="John"/>
+			&lt;/div>
+			&lt;div class="form-control">
+				&lt;label>Surname&lt;/label>
+				&lt;input type="text" placeholder="Doe"/>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-row">
+			&lt;div class="form-control">
+				&lt;label>E-mail&lt;/label>
+				&lt;input type="email" placeholder="email@example.com"/>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-row">
+			&lt;div class="form-control">
+				&lt;label>Web Browser&lt;/label>
+				&lt;div class="form-control-binary">
+					&lt;input id="radio-firefox" type="radio" name="browser"/>
+					&lt;label for="radio-firefox">Firefox&lt;/label>
+				&lt;/div>
+				&lt;div class="form-control-binary">
+					&lt;input id="radio-chrome" type="radio" name="browser"/>
+					&lt;label for="radio-chrome">Chrome&lt;/label>
+				&lt;/div>
+				&lt;div class="form-control-binary">
+					&lt;input id="radio-safari" type="radio" name="browser"/>
+					&lt;label for="radio-safari">Safari&lt;/label>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-row">
+			&lt;div class="form-control">
+				&lt;label>Operating System&lt;/label>
+				&lt;div class="form-control-binary">
+					&lt;input id="os-linux" type="checkbox" name="os"/>
+					&lt;label for="os-linux">Linux&lt;/label>
+				&lt;/div>
+				&lt;div class="form-control-binary">
+					&lt;input id="os-mac" type="checkbox" name="os"/>
+					&lt;label for="os-mac">Mac&lt;/label>
+				&lt;/div>
+				&lt;div class="form-control-binary">
+					&lt;input id="os-windows" type="checkbox" name="os"/>
+					&lt;label for="os-windows">Windows&lt;/label>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-row">
+			&lt;input class="primary" type="submit"/>
+		&lt;/div>
+	&lt;/form></code></pre><h2>Tables</h2><div class="table-container"><table><thead><tr><td>Name</td><td>Surname</td><td>Browser</td><td>Operating System</td></tr></thead><tbody><tr><td>Joe</td><td>Jones</td><td>Chrome</td><td>Linux</td></tr><tr><td>John</td><td>Smith</td><td>Safari</td><td>Mac</td></tr><tr><td>Jane</td><td>Doe</td><td>Firefox</td><td>Windows</td></tr></tbody></table></div><p>Use the <code>table-container</code> class to make the table scroll horizontally on small viewports.</p><pre data-lang="HTML"><code>&lt;div class="table-container">
+	&lt;table>
+		&lt;thead>
+			&lt;tr>
+				&lt;td>Name&lt;/td>
+				&lt;td>Surname&lt;/td>
+				&lt;td>Browser&lt;/td>
+				&lt;td>Operating System&lt;/td>
+			&lt;/tr>
+		&lt;/thead>
+		&lt;tbody>
+			&lt;tr>
+				&lt;td>John&lt;/td>
+				&lt;td>Smith&lt;/td>
+				&lt;td>Safari&lt;/td>
+				&lt;td>Mac&lt;/td>
+			&lt;/tr>
+		&lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre></div></div></div></div></body></html>
