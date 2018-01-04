@@ -17,4 +17,8 @@ cd rhazp
 npm install
 ```
 
-There is a simple build script provided which you can use to quickly compile a new theme. To use it, run `./build.sh path/to/theme`.
+There is a simple build script provided which you can use to quickly compile a new theme. To use it, run `./build.sh path/to/theme`. To compile Rhazp with the most up-to-date theme, run `./build.sh themes/midnight`.
+
+# Docs
+
+Docs are available at http://tanglewooddragons.github.io/rhazp.
