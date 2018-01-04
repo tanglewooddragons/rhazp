@@ -19,6 +19,8 @@ npm install
 
 There is a simple build script provided which you can use to quickly compile a new theme. To use it, run `./build.sh path/to/theme`. To compile Rhazp with the most up-to-date theme, run `./build.sh themes/midnight`.
 
+Before running the build script, make sure you have the `stylus` npm package installed globally (`sudo npm i -g stylus`), otherwise it will not compile. The script also probably doesn't work on Windows.
+
 # Docs
 
 Docs are available at http://tanglewooddragons.github.io/rhazp.
