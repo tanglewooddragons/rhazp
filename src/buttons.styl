@@ -4,12 +4,14 @@
 	appearance none
 
 	cursor pointer
-	display inline-block
 	border-radius $border-radius-lg
 
 	color $color-text
 	font-size $font-size
 	padding $spacing $spacing-lg
+
+	display inline-block
+	vertical-align middle
 
 	mixin-hover-gradient($color-secondary-light, rgba($color-secondary, .7))
 
@@ -41,3 +43,4 @@
 
 	&.fill
 		width 100%
+
