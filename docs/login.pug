@@ -1,0 +1,32 @@
+html
+	head
+		title Rhazp Documentation
+
+		link(rel='stylesheet', href='../rhazp.css')
+		link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel='stylesheet')
+
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+
+	body
+		form.login-box
+			img(src='../assets/banner_color_horizontal.png').responsive
+			.form-row
+				.form-control
+					label E-mail
+					input(type='text', placeholder='username@example.com')
+			.form-row
+				.form-control
+					label Password
+					input(type='password', placeholder='******')
+			.form-row
+				.form-control
+					button.lg.primary.fill Login
+			.form-row
+				.form-control
+					.input-group
+						button Login with Facebook
+						button Login with Twitter
+						button Login with GitHub
+
+
