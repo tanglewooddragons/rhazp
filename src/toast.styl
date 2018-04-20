@@ -1,0 +1,37 @@
+.toast-container
+	position fixed
+	top $spacing-lg
+	left 50%
+	transform translateX(-50%)
+	max-width $size-sm
+
+
+	z-index 1000
+
+	display flex
+	flex-direction column
+
+	.toast
+		padding $spacing
+		margin-top $spacing
+		cursor pointer
+		border-radius $border-radius
+		height 100%
+		
+		background $background
+
+		animation-name appear
+		animation-duration $transition-time
+
+		transition all $transition-time ease-in-out
+
+		box-shadow 2px 2px 5px $color-secondary-dark
+
+		&.invisible
+			opacity 0
+
+		&.positive
+			background $background-positive
+		&.negative
+			background $background-negative
+
